@@ -1,0 +1,123 @@
+/* 메인 베너 안 서브메뉴 아이콘 위치 */
+#slider .sub-menu ul li a.img-01:before {
+  background-position: 5px 0;
+}
+#slider .sub-menu ul li a.img-02:before {
+  background-position: -41px 0;
+}
+#slider .sub-menu ul li a.img-03:before {
+  background-position: -90px 0;
+}
+#slider .sub-menu ul li a.img-04:before {
+  background-position: -130px 0;
+}
+
+/* 베너 첫번째 박스들 안 아이콘 위치 */
+#content .inner .box-wrap .box .icon01:before {
+  background-position: 0 -42px;
+}
+#content .inner .box-wrap .box .icon02:before {
+  background-position: -80px -42px;
+}
+#content .inner .box-wrap .box .icon03:before {
+  background-position: -163px -42px;
+}
+#content .inner .box-wrap .box .icon04:before {
+  background-position: -244px -42px;
+}
+#content .inner .box-wrap .box .icon05:before {
+  background-position: -330px -42px;
+}
+#content .inner .box-wrap .box .icon06:before {
+  background-position: -410px -42px;
+}
+
+/* 진료과/의료진 검색 배너 안 아이콘 위치 */
+#content2 .inner .box-wrap .icon01:before {
+  background-position: 0 -120px;
+}
+#content2 .inner .box-wrap .icon02:before {
+  background-position: -96px -120px;
+}
+#content2 .inner .box-wrap .icon03:before {
+  background-position: -185px -120px;
+}
+#content2 .inner .box-wrap .icon04:before {
+  background-position: -276px -120px;
+}
+
+/* footer mark 안에 icon 위치 */
+
+.footer-mark .inner ul li.icon01::before {
+  width: 45px;
+  background-position: 0 0;
+}
+.footer-mark .inner ul li.icon02::before {
+  width: 49px;
+  background-position: -47px 0;
+}
+.footer-mark .inner ul li.icon03::before {
+  width: 45px;
+  background-position: -149px 0;
+}
+.footer-mark .inner ul li.icon04::before {
+  width: 55px;
+  background-position: -196px 0;
+}
+.footer-mark .inner ul li.icon05::before {
+  width: 55px;
+  background-position: -300px 0;
+}
+.footer-mark .inner ul li.icon06::before {
+  left: 25px;
+  width: 45px;
+  background-position: -254px 0;
+}
+
+/* footer-info sns-link icon */
+.footer-info .inner ul.sns-link li.sns-icon01 a {
+  background-position: 0 -32px;
+}
+.footer-info .inner ul.sns-link li.sns-icon02 a {
+  background-position: -32px -32px;
+}
+.footer-info .inner ul.sns-link li.sns-icon03 a {
+  background-position: -64px -32px;
+}
+.footer-info .inner ul.sns-link li.sns-icon04 a {
+  background-position: -128px -32px;
+}
+.footer-info .inner ul.sns-link li.sns-icon05 a {
+  background-position: -96px -32px;
+}
+.footer-info .inner ul.sns-link li.sns-icon01:hover a {
+  background-position: 0 0;
+}
+.footer-info .inner ul.sns-link li.sns-icon02:hover a {
+  background-position: -32px 0;
+}
+.footer-info .inner ul.sns-link li.sns-icon03:hover a {
+  background-position: -64px 0;
+}
+.footer-info .inner ul.sns-link li.sns-icon04:hover a {
+  background-position: -128px 0;
+}
+.footer-info .inner ul.sns-link li.sns-icon05:hover a {
+  background-position: -96px 0;
+}
+
+/* list.html */
+#section .menuBtn .email {
+  background-position: 0 -102px;
+}
+#section .menuBtn .print {
+  background-position: -84px -102px;
+}
+#section .menuBtn .email:hover {
+  background-position: 0 -229px;
+  background-color: #292f3c;
+}
+#section .menuBtn .print:hover {
+  background-position: -84px -229px;
+  background-color: #292f3c;
+}
