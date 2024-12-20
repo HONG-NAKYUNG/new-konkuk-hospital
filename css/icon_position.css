@@ -121,3 +121,13 @@
   background-position: -84px -229px;
   background-color: #292f3c;
 }
+
+/* health swiper prev next */
+.swiper.health-banner .btn-prev {
+  left: -10px;
+  background-position: 0 0;
+}
+.swiper.health-banner .btn-next {
+  right: -10px;
+  background-position: -32px 0;
+}

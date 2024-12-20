@@ -380,7 +380,7 @@ margin-top: -10px;
   max-width: 1720px;
   height: 640px;
   margin: 0 auto;
-  background-color: wheat;
+
 }
 
 .mainvideo{
@@ -793,12 +793,7 @@ margin-top: -10px;
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 /* swiper custom */
 /* middle slider */
@@ -823,9 +818,6 @@ margin-top: -10px;
 .middle-banner.swiper .swiper-button-prev {
   left: 95px;
 }
-
-/* health slider */
-.health-banner.swiper{}
 
 /* #health-info */
 #health-info {
@@ -863,17 +855,18 @@ margin-top: -10px;
   margin-bottom: 15px;
   color: #000;
 }
-/* .swiper.health {
+/* health slider */
+.swiper.health-banner{
   position: relative;
   padding: 0 30px;
   box-sizing: border-box;
   height: 190px;
 }
-.swiper.health .swiper-slide {
+.swiper.health-banner .swiper-slide {
   width: 354px;
   height: 190px;
 }
-.swiper.health .swiper-slide a {
+.swiper.health-banner .swiper-slide a {
   color: #666;
   font-size: 15px;
   font-weight: 400;
@@ -882,20 +875,79 @@ margin-top: -10px;
   height: 190px;
   line-height: 1.47;
 }
-.swiper.health .swiper-slide img {
+.swiper.health-banner .swiper-slide img {
   float: left;
   margin: 0 20px 20px 0;
   width: 104px;
   height: 103px;
 }
-.swiper.health .swiper-slide strong {
+.swiper.health-banner .swiper-slide strong {
   color: #000;
   font-size: 18px;
   font-weight: 500;
   display: block;
   margin-bottom: 10px;
-} */
-
+} 
+.swiper.health-banner.sec{
+  position: relative;
+  padding: 0 30px;
+  box-sizing: border-box;
+  height: 190px;
+}
+.swiper.health-banner.sec .swiper-slide {
+  width: 640px;
+  height: 190px;
+  padding-right: 20px;
+}
+.swiper.health-banner.sec .swiper-slide .user {
+  float: left;
+  width: 205px;
+  text-align: center;
+}
+.swiper.health-banner.sec .swiper-slide .user img {
+  display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.swiper.health-banner.sec .swiper-slide .user strong {
+  color: #222;
+  font-size: 20px;
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+  display: block;
+}
+.swiper.health-banner.sec .swiper-slide .user p {
+  color: #888;
+  font-size: 14px;
+}
+.swiper.health-banner .btn-prev {
+  overflow: hidden;
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 70px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url('../img/health-info/spr_button_slide.png') no-repeat;
+}
+.swiper.health-banner .btn-next {
+  overflow: hidden;
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 70px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url('../img/health-info/spr_button_slide.png') no-repeat;
+}
 /* footer */
 #footer {
   width: 100%;
