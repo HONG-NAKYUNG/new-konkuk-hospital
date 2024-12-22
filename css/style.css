@@ -67,10 +67,6 @@ a {
   z-index: 500;
 }
 
-/* #header.active {
-  border-bottom: 1px solid #12b8ba;
-} */
-
 /* header 안 맨 위 버튼 부분 (top-left / right) */
 #header .top-left {
   left: 0;
@@ -205,67 +201,6 @@ header .inner {
   padding: 10px;
 }
 
-/* 
-#gnb .submenu .inner .list {
-  float: left;
-  position: relative;
-  width: 209px;
-  height: 96px;
-}
-#gnb .list > ul {
-  margin: 25px 20px;
-  height: 26px;
-}
-#gnb .list > ul:first-child {
-  margin-top: 45px;
-}
-#gnb .list > ul > li > a {
-  color: #222;
-  font-size: 18px;
-  font-weight: 600;
-}
-#gnb .list:before {
-  content: "";
-  position: absolute;
-  top: 50px;
-  bottom: 0;
-  left: 0;
-  width: 1px;
-  background-color: #ddd;
-}
-#gnb .submenu-tabBtn {
-  position: absolute;
-  top: 163px;
-  left: 0;
-  z-index: 1;
-  width: 160px;
-}
-#gnb .submenu-tabBtn li {
-  margin-top: 14px;
-}
-#gnb .submenu-tabBtn li a {
-  color: #888;
-  font-size: 18px;
-  font-weight: 500;
-  display: block;
-  height: 40px;
-  padding: 0 20px;
-  line-height: 40px;
-  transition: all 0.2s;
-}
-#gnb .submenu-tabBtn li.active a {
-  color: #fff;
-  background-color: #12b8ba;
-}
-
-#gnb ul.mainmenu > li.active .submenu {
-  display: block;
-  border-bottom: 2px solid #12b8ba;
-}
-#gnb ul.mainmenu > li .submenu {
-  display: none;
-} */
-
 /* gnb 안 submenu 디자인 */
 .submenu-wrap {
   position: absolute;
@@ -293,6 +228,7 @@ header .inner {
 
 .submenu-wrap .inner .submenu .des {
   float: left;
+  text-align: left;
   width: calc(100% - 250px);
   box-sizing: border-box;
   border-left: 1px solid #e4e4e4;
@@ -315,7 +251,7 @@ header .inner {
   width: 20%;
 }
 .submenu-wrap .inner .submenu.sec .des > ul > li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   left: -15px;
@@ -339,65 +275,282 @@ header .inner {
 }
 .submenu-wrap .inner .submenu.sec .des {
   float: left;
-  width: calc(100% - 150px);
+  width: calc(100% - 210px - 150px);
+  height: 400px;
   box-sizing: border-box;
   border-left: 1px solid #e4e4e4;
   line-height: 2.7;
 }
-.submenu-wrap .inner .submenu.sec .des .submenu-cont {
-  height: 342px;
-  float: right;
+.submenu-wrap .inner .submenu.sec .des > ul {
+  margin-left: 10px;
+}
+.submenu-wrap .inner .submenu.sec .submenu-cont {
+  float: left;
+  height: 400px;
+  text-align: left;
   position: relative;
   width: 209px;
   border-left: 1px solid #e4e4e4;
 }
 
 /* 진료안내 오른쪽 서브메뉴 or 이용안내 서브메뉴 */
-.submenu-wrap .inner .submenu .des .submenu-cont {
-  height: 342px;
-  float: left;
-  position: relative;
-  width: 209px;
-  border-left: 1px solid #e4e4e4;
-}
-.submenu-wrap .inner .submenu .des .submenu-cont > ul {
+.submenu-wrap .inner .submenu .submenu-cont > ul {
   margin-left: 20px;
 }
-.submenu-wrap .inner .submenu .des .submenu-cont ul > li{
+.submenu-wrap .inner .submenu .submenu-cont ul > li {
   margin-left: 0;
+  margin-bottom: 15px;
 }
-.submenu-wrap .inner .submenu .des .submenu-cont > ul > li > ul > li {
-margin-top: -10px;
+.submenu-wrap .inner .submenu .submenu-cont ul > li > a {
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
 }
-.submenu-wrap .inner .submenu .des .submenu-cont > ul > li > ul > li > a{
+.submenu-wrap .inner .submenu .submenu-cont > ul > li > ul {
+  margin-top: 12px;
+}
+.submenu-wrap .inner .submenu .submenu-cont > ul > li > ul > li {
+  margin-top: -10px;
+}
+.submenu-wrap .inner .submenu .submenu-cont > ul > li > ul > li > a {
   color: #888;
   font-size: 15px;
   font-weight: 400;
 }
-
+.submenu-wrap .inner .submenu.thi .des {
+  float: left;
+  text-align: left;
+  height: 380px;
+  width: calc(100% - 375px - 250px);
+  box-sizing: border-box;
+  line-height: 2.7;
+}
+.submenu-wrap .inner .submenu.thi .submenu-cont {
+  float: left;
+  height: 380px;
+  text-align: left;
+  position: relative;
+  width: 209px;
+  border-left: 1px solid #e4e4e4;
+}
+.submenu-wrap .inner .submenu.thi .submenu-cont ul > li {
+  margin-bottom: 0;
+}
+.submenu-wrap .inner .submenu .phoneNum {
+  float: right;
+  text-align: left;
+  width: 315px;
+  margin: 0 0 0 102px;
+  padding: 40px 10px 50px 46px;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  background-color: #fafbfc;
+}
+.submenu-wrap .inner .submenu .phoneNum em {
+  color: #3086c9;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  height: 34px;
+  padding-left: 42px;
+  line-height: 34px;
+  background: url("../img/header/spr_etc.png") no-repeat -145px 0;
+}
+.submenu-wrap .inner .submenu .phoneNum dl {
+  margin-top: 5px;
+}
+.submenu-wrap .inner .submenu .phoneNum dl dt {
+  clear: both;
+  width: 104px;
+  padding-left: 5px;
+  color: #888;
+  float: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.submenu-wrap .inner .submenu .phoneNum dl dd {
+  color: #444;
+  float: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+/* 건강정보 */
+.submenu-wrap .inner .submenu.fou .des {
+  float: left;
+  text-align: left;
+  height: 185px;
+  width: calc(100% - 418px - 250px);
+  box-sizing: border-box;
+  line-height: 2.7;
+}
+.submenu-wrap .inner .submenu.fou .des .submenu-cont {
+  float: left;
+  height: 185px;
+  text-align: left;
+  position: relative;
+  width: 209px;
+  border-left: 1px solid #e4e4e4;
+}
+.submenu-wrap .inner .submenu.fou .submenu-cont ul > li {
+  margin-bottom: 0;
+}
+/* 건강정보, 고객참여 오른쪽 */
+.submenu-wrap .inner .submenu .right-box {
+  float: left;
+  text-align: left;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: 209px;
+}
+.submenu-wrap .inner .sub-menu .item {
+  height: 340px;
+}
+.submenu-wrap .inner .submenu .item a {
+  display: block;
+}
+.submenu-wrap .inner .submenu .item em {
+  color: #222;
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  margin: -5px 0 14px;
+}
+.submenu-wrap .inner .submenu .item em::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 9px;
+  margin: -5px 0 0 8px;
+  background: url("../img/header/spr_etc.png") no-repeat -163px -36px;
+}
+.submenu-wrap .inner .submenu .item img {
+  display: block;
+  width: 190px;
+  height: 100px;
+}
+.submenu-wrap .inner .submenu .item p {
+  color: #888;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 7px;
+}
+/* 고객참여 */
+.submenu-wrap .inner .submenu.fiv .des {
+  float: left;
+  text-align: left;
+  height: 185px;
+  width: calc(100% - 380px - 250px);
+  box-sizing: border-box;
+  line-height: 2.7;
+}
+.submenu-wrap .inner .submenu.fiv .des .submenu-cont {
+  float: left;
+  height: 320px;
+  text-align: left;
+  position: relative;
+  width: 209px;
+  border-left: 1px solid #e4e4e4;
+}
+.submenu-wrap .inner .submenu.fiv .submenu-cont ul > li {
+  margin-bottom: 0;
+}
+/* 병원안내 */
+.submenu-wrap .inner .submenu.six .des {
+  float: left;
+  text-align: left;
+  width: calc(100% - 370px - 250px);
+  box-sizing: border-box;
+  border-left: 1px solid #e4e4e4;
+  line-height: 2.7;
+}
+.submenu-wrap .inner .submenu.six .des .submenu-cont {
+  float: left;
+  height: 400px;
+  text-align: left;
+  position: relative;
+  width: 209px;
+  border-left: 1px solid #e4e4e4;
+}
+.submenu-wrap .inner .submenu.six .submenu-cont ul > li {
+  margin-bottom: 0;
+}
+.submenu-wrap .inner .submenu.six .magazine {
+  width: 420px;
+  display: flex;
+}
+.submenu-wrap .inner .submenu.six .magazine img {
+  width: 223px;
+  float: left;
+  margin-top: 50px;
+}
+.submenu-wrap .inner .submenu.six .magazine .info {
+  float: left;
+  padding-left: 27px;
+}
+.submenu-wrap .inner .submenu.six .magazine .info img {
+  width: 162px;
+}
+.submenu-wrap .inner .submenu.six .magazine .info strong {
+  display: block;
+  margin-top: 9px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+}
+.submenu-wrap .inner .submenu.six .magazine .info .btn-wrap {
+  margin-top: 30px;
+  text-align: left;
+  min-height: 40px;
+}
+.submenu-wrap .inner .submenu.six .magazine .info .btn-wrap a {
+  border: 1px solid #254069;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 90px;
+  height: 40px;
+  margin: 0 3px;
+  padding: 0 30px;
+  border-radius: 3px;
+  color: #254069;
+  font-size: 16px;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+}
+.submenu-wrap .inner .submenu.six .magazine .info .btn-wrap span::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 16px;
+  margin: 0 10px 5px 0;
+  background: url("../img/header/spr_button.png") no-repeat -72px -23px;
+}
 /* #slider */
 #slider {
   max-width: 1720px;
   height: 640px;
   margin: 0 auto;
-
 }
 
-.mainvideo{
+.mainvideo {
   position: relative;
   height: 640px;
 }
 
 .mainvideo video {
-  position: absolute;  
+  position: absolute;
   right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
 }
 
 /* #slider .sub-menu */
-#slider .sub-menu {  
+#slider .sub-menu {
   width: 100%;
   height: 80px;
   background-color: #12b8ba;
@@ -793,16 +946,18 @@ margin-top: -10px;
   align-items: center;
 }
 
-
-
 /* swiper custom */
 /* middle slider */
 .middle-banner.swiper .swiper-horizontal > .swiper-pagination-bullets,
 .middle-banner.swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
   margin-bottom: 30px;
 }
-.middle-banner.swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.middle-banner.swiper .swiper-pagination-horizontal.swiper-pagination-bullets
+.middle-banner.swiper
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.middle-banner.swiper
+  .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   background-color: #fff;
   width: 12px;
@@ -856,7 +1011,7 @@ margin-top: -10px;
   color: #000;
 }
 /* health slider */
-.swiper.health-banner{
+.swiper.health-banner {
   position: relative;
   padding: 0 30px;
   box-sizing: border-box;
@@ -887,8 +1042,8 @@ margin-top: -10px;
   font-weight: 500;
   display: block;
   margin-bottom: 10px;
-} 
-.swiper.health-banner.sec{
+}
+.swiper.health-banner.sec {
   position: relative;
   padding: 0 30px;
   box-sizing: border-box;
@@ -906,9 +1061,9 @@ margin-top: -10px;
 }
 .swiper.health-banner.sec .swiper-slide .user img {
   display: inline-block;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
 .swiper.health-banner.sec .swiper-slide .user strong {
   color: #222;
@@ -934,7 +1089,7 @@ margin-top: -10px;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background: url('../img/health-info/spr_button_slide.png') no-repeat;
+  background: url("../img/health-info/spr_button_slide.png") no-repeat;
 }
 .swiper.health-banner .btn-next {
   overflow: hidden;
@@ -946,7 +1101,7 @@ margin-top: -10px;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background: url('../img/health-info/spr_button_slide.png') no-repeat;
+  background: url("../img/health-info/spr_button_slide.png") no-repeat;
 }
 /* footer */
 #footer {
@@ -1203,14 +1358,14 @@ margin-top: -10px;
 /* list.html */
 #section {
   position: relative;
-  padding: 215px 10px 70px;
+  padding: 110px 10px 70px;
   width: 1300px;
   height: 1472px;
   margin: 0 auto;
 }
 #section .menuBtn {
   position: absolute;
-  top: 225px;
+  top: 120px;
   right: 10px;
   z-index: 10;
 }
