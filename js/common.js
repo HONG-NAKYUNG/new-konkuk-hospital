@@ -50,6 +50,10 @@ $(function () {
     pagination: {
       el: ".swiper-pagination",
     },
+    navigation: {
+      nextEl: "btn-next",
+      prevEl: "btn-prev",
+    },
   });
 
   //list.html 탭버튼
